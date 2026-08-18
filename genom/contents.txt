@@ -1,0 +1,147 @@
+---
+
+# **📊 PPT Layout — Asian Paints BHPS Case Analysis**
+
+---
+
+## **🔵 Slide 1 — Title Slide**
+**Asian Paints: BHPS Case Analysis**  
+Scaling Beautiful Homes Painting Service (BHPS) from 100,000 → 1,000,000 homes  
+**Prepared by:** Jomer Pangilinan  
+**Course:** Scalable Operations Management  
+**Date:** July 2026
+
+---
+
+## **🔵 Slide 2 — Company Background: Asian Paints**
+**Founded:** 1942  
+**Industry:** Decorative & industrial paints; home décor & services  
+
+**Scale & Reach**  
+- ₹354B turnover (FY 2023–24)  
+- Operations in ~15 countries  
+- 27 manufacturing facilities  
+- 160,000+ retail touchpoints  
+
+**Strategic Direction**  
+- Shift from product-only → **Product + Service ecosystem**  
+- BHPS as a premium, supervised service to seed high-margin products  
+
+**Case Evidence**  
+- “Ranked among the top 10 decorative coating companies globally.”  
+- “Generated INR 354B turnover in FY 2023–24.”
+
+---
+
+## **🔵 Slide 3 — Key Challenges & Problems**
+**1. Scaling BHPS 10x**  
+- Quality dilution, SLA failures, rising complaints  
+- Execution complexity across dealers, associates, contractors  
+
+**2. Dealer Economics & Incentives**  
+- Margin pressure  
+- Over-reliance on high-performing dealers  
+
+**3. Manpower & Associate Churn (>50%)**  
+- Threatens MoT discipline  
+- Training scalability concerns  
+
+**4. Contractor Network Quality & Capacity**  
+- Rapid onboarding → inconsistent workmanship  
+- TCS vs BHPS cannibalization  
+
+**5. Technology & Process Orchestration**  
+- Salesforce adoption gaps  
+- Data quality & compliance risks  
+
+**6. Lead Conversion & Marketing ROI**  
+- BHPS conversion: 6–7%  
+- TCS conversion: 20–25%  
+- High CAC threatens profitability  
+
+**7. Operational Risks**  
+- Supply chain delays, seasonality  
+- “On Time or Money Back” → payout exposure  
+
+---
+
+## **🔵 Slide 4 — Options to Solve the Problem**
+**Option 1 — Strengthen IT Controls (Fail‑Safing + ERP Integration)**  
+- Enforce MoTs digitally  
+- Automate checks, escalations, SLA tracking  
+- Integrate sales, logistics, operations  
+
+**Option 2 — Process Re‑engineering & Capacity Buffers**  
+- Standardize customer journey  
+- Simplify handoffs  
+- Build regional buffer stocks  
+
+**Option 3 — Do Nothing (Status Quo)**  
+- Continue scaling current BHPS model  
+- Avoid upfront investment  
+- Accept rising complaints & payout risks  
+
+**Option 4 — Capture Information at Source**  
+- Require MoTs to be recorded on-site  
+- Improve accuracy & reduce rework  
+
+**Option 5 — Centralized Digital Platform**  
+- Treat dealers, associates, contractors as one network  
+- Improve SLA visibility & escalation speed  
+
+**Option 6 — Integrate Dealers & Contractors into Supply Chain**  
+- Link inventory, scheduling, certification  
+- Protect consistency during 10x scale-up  
+
+---
+
+## **🔵 Slide 5 — Recommendation (Hybrid Strategy)**
+**Strengthen Backbone First, Scale Second**
+
+**1. Enforce MoT Compliance Rigorously**  
+- Make MoTs non-negotiable in digital workflows  
+- Reduce rework, complaints, payout exposure  
+
+**2. Redesign Dealer Incentives**  
+- Tiered commissions + performance bonuses  
+- Protect dealer economics while scaling  
+
+**3. Scale Frontline Capability**  
+- Expand Starmaker coach network  
+- Introduce partial on-roll roles to reduce churn  
+
+**4. Build Capacity Buffers**  
+- Regional warehouses  
+- Mechanized kits  
+- Contractor certification ladder  
+
+**5. Segment BHPS vs TCS Clearly**  
+- BHPS = premium, supervised  
+- TCS = mass-market, trained contractor  
+- Prevent cannibalization  
+
+**6. Phase the Scale-Up**  
+- Strengthen operating model → then accelerate  
+- Protect brand equity & premium product adoption  
+
+---
+
+## **🔵 Slide 6 — Final Takeaway**
+BHPS is strategically attractive, but scaling 10x requires:  
+- Stronger process discipline  
+- Digital enforcement  
+- Dealer alignment  
+- Frontline capability building  
+- Clear segmentation  
+
+A phased, hybrid strategy ensures **growth without compromising service quality**.
+
+---
+
+If you want, I can also generate:  
+- **A slide master theme** (colors, fonts, layout cues)  
+- **A one-page executive summary**  
+- **A visual roadmap slide** (Gantt-style or maturity model)  
+- **A 2×2 matrix for strategic options**
+
+Just tell me what you want next.
