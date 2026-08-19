@@ -33,9 +33,10 @@
     --pf-mark: #1a1a1a;
     --pf-scroll-shadow: rgba(0, 0, 0, 0.08);
 
-    --pf-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --pf-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-    --pf-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.2);
+    /* Material Design Shadow System */
+    --pf-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --pf-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    --pf-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
 
     --pf-error-bg: #fef2f2;
     --pf-error-border: #fecaca;
@@ -62,7 +63,8 @@
     --pf-results-columns: none;
     --pf-results-gap: 8px;
 
-    --pf-border-radius: 6px;
+    /* Material Design Border Radius */
+    --pf-border-radius: 8px;
     --pf-image-width: 64px;
     --pf-image-height: 48px;
 
@@ -96,9 +98,10 @@
 
     --pf-outline-focus: #58a6ff;
 
-    --pf-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --pf-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-    --pf-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+    /* Material Design Dark Theme Shadows */
+    --pf-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    --pf-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+    --pf-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.4);
 
     --pf-error-bg: #2a1a1a;
     --pf-error-border: #5c2828;
@@ -378,13 +381,14 @@ pagefind-modal-trigger {
     border: 1px solid var(--pf-border);
     border-radius: var(--pf-border-radius);
     transition:
-        border-color 0.15s,
-        box-shadow 0.15s;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    box-shadow: var(--pf-shadow-sm);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#) .pf-result-card:hover {
     border-color: var(--pf-border-focus);
-    box-shadow: var(--pf-shadow-sm);
+    box-shadow: var(--pf-shadow-md);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#)
@@ -548,15 +552,16 @@ pagefind-modal-trigger {
     display: inline-flex;
     flex-direction: column;
     gap: 2px;
-    padding: 8px 10px;
+    padding: 8px 12px;
     background: var(--pf-background);
     border: 1px solid var(--pf-border);
-    border-radius: 6px;
+    border-radius: var(--pf-border-radius);
     font-size: 12px;
     transition:
-        border-color 0.15s,
-        box-shadow 0.15s;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
     position: relative;
+    box-shadow: var(--pf-shadow-sm);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#) .pf-heading-chip:hover {
@@ -617,6 +622,7 @@ pagefind-modal-trigger {
     border-radius: var(--pf-border-radius);
     border: 1px solid var(--pf-border);
     overflow: hidden;
+    box-shadow: var(--pf-shadow-sm);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#) .pf-filter-group {
@@ -812,10 +818,11 @@ pagefind-modal-trigger {
     font-size: 13px;
     color: var(--pf-text-secondary);
     cursor: pointer;
-    transition: border-color 0.15s;
+    transition: all 0.2s ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    box-shadow: var(--pf-shadow-sm);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#) .pf-dropdown-trigger:hover {
@@ -1040,8 +1047,9 @@ pagefind-modal-trigger {
     color: var(--pf-text-muted);
     cursor: pointer;
     transition:
-        border-color 0.15s,
-        box-shadow 0.15s;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    box-shadow: var(--pf-shadow-sm);
 }
 
 :is(*, #\#):is(*, #\#):is(*, #\#) .pf-trigger-btn:hover {

@@ -1,15 +1,17 @@
 .counter {
   font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 8px 16px;
+  border-radius: 8px;
   color: var(--accent);
   background: var(--accent-bg);
   border: 2px solid transparent;
-  transition: border-color 0.3s;
+  transition: all 0.2s ease;
   margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 
   &:hover {
     border-color: var(--accent-border);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   }
   &:focus-visible {
     outline: 2px solid var(--accent);
