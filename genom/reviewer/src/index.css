@@ -291,3 +291,156 @@ dialog::backdrop {
     opacity: 0;
   }
 }
+
+/* Birthday Cake */
+.birthday-cake {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cake-layer {
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.cake-bottom {
+  background: #d4714d;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cake-middle {
+  background: #e8956a;
+  margin-top: -8px;
+  position: relative;
+}
+
+.cake-top {
+  background: #f5c99e;
+  margin-top: -8px;
+  height: 50px;
+  position: relative;
+}
+
+.cake-top::before {
+  content: '🍓';
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 15px;
+}
+
+.cake-top::after {
+  content: '🍓';
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 15px;
+}
+
+.candle {
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background: #ffb84d;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.candle::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ff6b35;
+  border-radius: 50%;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px #ff6b35;
+  animation: flicker 0.4s infinite;
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  border-radius: 50% 50% 50% 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.balloon::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.2);
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.balloon-1 {
+  background: #ff6b6b;
+  left: 35%;
+  top: -80px;
+  transform: rotate(-20deg);
+  animation-delay: 0s;
+}
+
+.balloon-2 {
+  background: #4ecdc4;
+  left: 50%;
+  top: -100px;
+  transform: rotate(0deg);
+  animation-delay: 0.2s;
+}
+
+.balloon-3 {
+  background: #ffe66d;
+  left: 65%;
+  top: -80px;
+  transform: rotate(20deg);
+  animation-delay: 0.4s;
+}
+
+@keyframes popIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

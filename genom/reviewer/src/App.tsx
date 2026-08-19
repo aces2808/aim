@@ -52,6 +52,17 @@ export default function App() {
           <div className="confetti"></div>
           <div className="confetti"></div>
           <div className="confetti"></div>
+
+          <div className="birthday-cake">
+            <div className="balloon balloon-1"></div>
+            <div className="balloon balloon-2"></div>
+            <div className="balloon balloon-3"></div>
+
+            <div className="cake-layer cake-bottom"></div>
+            <div className="cake-layer cake-middle"></div>
+            <div className="cake-layer cake-top"></div>
+            <div className="candle"></div>
+          </div>
         </div>
       )}
     </>
