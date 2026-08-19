@@ -13,6 +13,19 @@ export default function App() {
           if (bodyText.includes('Happy Birthday Jen Subang')) {
             setIsBirthday(true);
           }
+
+          const searchInput = iframeDoc.querySelector(
+            'input[type="search"], input[placeholder*="search" i]'
+          ) as HTMLInputElement;
+          if (searchInput) {
+            const handleSearch = () => {
+              if (searchInput.value.includes('Happy Birthday Jen Subang')) {
+                setIsBirthday(true);
+              }
+            };
+            searchInput.addEventListener('input', handleSearch);
+            return () => searchInput.removeEventListener('input', handleSearch);
+          }
         }
       } catch (e) {
         // Cross-origin iframe, silently fail
