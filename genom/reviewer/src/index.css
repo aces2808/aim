@@ -108,3 +108,24 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+dialog::backdrop {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+@media (max-width: 640px) {
+  starlight-menu-button button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  starlight-menu-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}

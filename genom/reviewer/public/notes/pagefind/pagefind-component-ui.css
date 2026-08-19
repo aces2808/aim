@@ -1488,6 +1488,18 @@ pagefind-modal-trigger {
 }
 
 @media (max-width: 640px) {
+    :is(*, #\#):is(*, #\#):is(*, #\#) .pf-input,
+    :is(*, #\#):is(*, #\#):is(*, #\#) .pf-searchbox-input {
+        padding-inline-start: 28px;
+        padding-inline-end: 32px;
+        font-size: 16px;
+    }
+
+    :is(*, #\#):is(*, #\#):is(*, #\#) .pf-input-clear {
+        min-width: 36px;
+        padding: 0 4px;
+    }
+
     :is(*, #\#):is(*, #\#):is(*, #\#) .pf-dropdown-menu {
         min-width: unset;
         width: max(180px, calc(100vw - 32px));
