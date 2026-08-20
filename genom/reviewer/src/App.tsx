@@ -4,6 +4,7 @@ export default function App() {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [isBirthday, setIsBirthday] = useState(false);
   const [isWedding, setIsWedding] = useState(false);
+  const [isEngagement, setIsEngagement] = useState(false);
 
   useEffect(() => {
     const checkCelebration = () => {
@@ -17,6 +18,9 @@ export default function App() {
           if (bodyText.includes('Congrats and Best Wishes Emylea')) {
             setIsWedding(true);
           }
+          if (bodyText.toLowerCase().includes('congrats cedric and reg')) {
+            setIsEngagement(true);
+          }
 
           const searchInput = iframeDoc.querySelector(
             'input[type="search"], input[placeholder*="search" i]'
@@ -28,6 +32,9 @@ export default function App() {
               }
               if (searchInput.value.includes('Congrats and Best Wishes Emylea')) {
                 setIsWedding(true);
+              }
+              if (searchInput.value.toLowerCase().includes('congrats cedric and reg')) {
+                setIsEngagement(true);
               }
             };
             searchInput.addEventListener('input', handleSearch);
@@ -90,6 +97,24 @@ export default function App() {
               <div className="heart heart-2">💕</div>
             </div>
             <div className="groom">🤵</div>
+          </div>
+        </div>
+      )}
+      {isEngagement && (
+        <div className="engagement-celebration">
+          <div className="sparkle sparkle-1">✨</div>
+          <div className="sparkle sparkle-2">💖</div>
+          <div className="sparkle sparkle-3">✨</div>
+          <div className="sparkle sparkle-4">💖</div>
+          <div className="sparkle sparkle-5">✨</div>
+
+          <div className="engagement-display">
+            <div className="engagement-title">Congrats Cedric & Reg! 💍</div>
+            <div className="engagement-row">
+              <div className="engagement-bride">👰‍♀️</div>
+              <div className="engagement-ring">💍</div>
+              <div className="engagement-groom">🤵‍♂️</div>
+            </div>
           </div>
         </div>
       )}
